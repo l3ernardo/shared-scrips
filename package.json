@@ -18,11 +18,11 @@
     "trailingComma": "es5"
   },
   "keywords": [],
-  "name": "",
-  "author": "",
+  "name": "@l3ernardo/jobber-shared",
+  "author": "Bernardo Queiroz",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/l3ernardo/jobber-shared.git"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
