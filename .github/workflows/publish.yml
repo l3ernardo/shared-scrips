@@ -29,11 +29,9 @@ jobs:
 
       - name: Configure npm for GitHub Packages
         run: |
-          echo "@l3ernardo:registry=https://npm.pkg.github.com/@l3ernardo" > build/.npmrc
-          echo "//npm.pkg.github.com/:_authToken=${{ secrets.NPM_TOKEN }}" >> build/.npmrc
+          echo "//npm.pkg.github.com/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
 
       - name: Publish to GitHub Packages
         run: npm publish
-        working-directory: ./build
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
