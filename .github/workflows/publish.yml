@@ -30,7 +30,7 @@ jobs:
       - name: Configure npm for GitHub Package
         run: |
           echo @l3ernardo:https://npm.pkg.github.com/ > build/.npmrc
-          echo "//npm.pkg.github.com/:_authToken=${{ secrets.NPM_TOKEN }}" > build/.npmrc
+          echo "//npm.pkg.github.com/:_authToken=${NPM_TOKEN}" > build/.npmrc
           
       - name: Publish to GitHub Packages
         run: npm publish
